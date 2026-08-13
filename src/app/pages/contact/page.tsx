@@ -102,17 +102,17 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-[12px] uppercase tracking-[0.2em] text-[#CBB98C] ml-1">Full Name</label>
                   <input
-                    type="text" id="name" required
+                    type="text" id="name" name="name" autoComplete="name" required
                     placeholder="Enter your name"
-                    className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#EDC301]/50 transition-colors"
+                    className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-white focus:border-[#EDC301]/70 transition-colors"
                   />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-[12px] uppercase tracking-[0.2em] text-[#CBB98C] ml-1">Email Address</label>
                   <input
-                    type="email" id="email" required
+                    type="email" id="email" name="email" autoComplete="email" required
                     placeholder="Enter your email"
-                    className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#EDC301]/50 transition-colors"
+                    className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-white focus:border-[#EDC301]/70 transition-colors"
                   />
                 </div>
               </div>
@@ -120,18 +120,18 @@ export default function ContactPage() {
               <div className="space-y-2">
                 <label htmlFor="subject" className="text-[12px] uppercase tracking-[0.2em] text-[#CBB98C] ml-1">Subject</label>
                 <input
-                  type="text" id="subject"
+                  type="text" id="subject" name="subject"
                   placeholder="What is this about?"
-                  className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#EDC301]/50 transition-colors"
+                  className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-white focus:border-[#EDC301]/70 transition-colors"
                 />
               </div>
 
               <div className="space-y-2">
                 <label htmlFor="message" className="text-[12px] uppercase tracking-[0.2em] text-[#CBB98C] ml-1">Message</label>
                 <textarea
-                  id="message" required rows={5}
+                  id="message" name="message" required rows={5}
                   placeholder="Write your message here..."
-                  className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-[#EDC301]/50 transition-colors resize-none"
+                  className="w-full bg-white/[0.03] border border-white/10 rounded-xl px-5 py-4 text-white focus:border-[#EDC301]/70 transition-colors resize-none"
                 />
               </div>
 

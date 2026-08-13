@@ -37,9 +37,12 @@ export default function RootLayout({
       <body
         className={`${albertSans.variable} ${archivo.variable} ${chewy.variable} antialiased`}
       >
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
         <ScrollEffects />
         <Navbar />
-        {children}
+        <main id="main-content">{children}</main>
         <Foot />
         <Analytics />
       </body>

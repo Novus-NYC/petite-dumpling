@@ -95,7 +95,7 @@ export default function Header() {
               className="
                 cta-sweep
                 flex items-center justify-center gap-2
-                rounded-full bg-[#EDC301] text-white
+                rounded-full bg-[#EDC301] text-black
                 h-[48px] min-w-[150px] px-5
                 md:h-[48px] md:min-w-[165px]
                 lg:h-[56px] lg:min-w-[180px] lg:px-8

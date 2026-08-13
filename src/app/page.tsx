@@ -7,13 +7,13 @@ import LocationsSection from "@/lib/components/LocationsSection";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Header />
       <FirstSection />
       <MenuSection />
       <MenuPosterSection />
       <LocationsSection />
       <OrderFeaturesSection />
-    </main>
+    </>
   );
 }

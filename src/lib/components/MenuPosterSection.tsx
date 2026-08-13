@@ -53,13 +53,13 @@ function MenuPosterCard({
             href={href}
             target="_blank"
             rel="noreferrer"
-            className="cta-sweep inline-flex min-h-[42px] items-center rounded-full bg-[#EDC301] px-5 text-[14px] font-extrabold text-white"
+            className="cta-sweep inline-flex min-h-[42px] items-center rounded-full bg-[#EDC301] px-5 text-[14px] font-extrabold text-black"
           >
             Open menu
           </a>
         </div>
 
-        <p className="mb-5 max-w-[760px] text-[15px] leading-[1.42] text-[#6F675F] sm:text-[16px]">
+        <p className="mb-5 max-w-[760px] text-[15px] leading-[1.42] text-[#5E554C] sm:text-[16px]">
           {description}
         </p>
 
@@ -117,7 +117,7 @@ export default function MenuPosterSection() {
             Full Menu
           </h2>
 
-          <p className="mx-auto mt-4 max-w-[820px] text-center text-[16px] leading-[1.4] text-[#6F675F] sm:text-[18px] md:text-[21px]">
+          <p className="mx-auto mt-4 max-w-[820px] text-center text-[16px] leading-[1.4] text-[#5E554C] sm:text-[18px] md:text-[21px]">
             Dumplings, noodles, soups, small plates, and chef specials for both
             Brooklyn locations.
           </p>
@@ -142,7 +142,7 @@ export default function MenuPosterSection() {
           />
         </div>
 
-        <p className="mt-8 max-w-[760px] text-center text-[14px] leading-[1.45] text-[#6F675F] sm:text-[15px]">
+        <p className="mt-8 max-w-[760px] text-center text-[14px] leading-[1.45] text-[#5E554C] sm:text-[15px]">
           Please tell us your allergies. Some dishes contain peanuts and sesame.
           Mala means spicy sauce made with Sichuan peppercorns.
         </p>

@@ -76,7 +76,7 @@ function MenuCard({
             style={{
               fontFamily: '"Albert Sans", sans-serif',
               fontWeight: 800,
-              color: "#FFFFFF",
+              color: "#312312",
             }}
           >
             {tag}
@@ -110,7 +110,7 @@ function MenuCard({
             style={{
               fontFamily: '"Albert Sans", sans-serif',
               fontWeight: 400,
-              color: "#908B83",
+              color: "#5E554C",
             }}
           >
             {description}
@@ -187,7 +187,7 @@ export default function MenuSection() {
               style={{
                 fontFamily: '"Albert Sans", sans-serif',
                 fontWeight: 400,
-                color: "#908B83",
+                color: "#5E554C",
               }}
             >
               Welcome, new visitors and returning friends. With Prospect Heights
@@ -266,7 +266,7 @@ export default function MenuSection() {
               style={{
                 fontFamily: '"Albert Sans", sans-serif',
                 fontWeight: 800,
-                color: "#908B83",
+                color: "#5E554C",
               }}
             >
               Our featured small plates:
@@ -345,7 +345,7 @@ export default function MenuSection() {
               style={{
                 fontFamily: '"Albert Sans", sans-serif',
                 fontWeight: 800,
-                color: "#908B83",
+                color: "#5E554C",
               }}
             >
               Our featured main courses:
@@ -408,7 +408,7 @@ export default function MenuSection() {
                         style={{
                           fontFamily: '"Albert Sans", sans-serif',
                           fontWeight: 800,
-                          color: "#FFFFFF",
+                          color: "#312312",
                         }}
                       >
                         spicy
@@ -431,7 +431,7 @@ export default function MenuSection() {
                       style={{
                         fontFamily: '"Albert Sans", sans-serif',
                         fontWeight: 400,
-                        color: "#908B83",
+                        color: "#5E554C",
                       }}
                     >
                       Dao Xiao noodles tossed with mala spicy sauce, cucumber,
@@ -508,7 +508,7 @@ export default function MenuSection() {
                       style={{
                         fontFamily: '"Albert Sans", sans-serif',
                         fontWeight: 800,
-                        color: "#FFFFFF",
+                        color: "#312312",
                       }}
                     >
                         soup
@@ -543,7 +543,7 @@ export default function MenuSection() {
                     style={{
                       fontFamily: '"Albert Sans", sans-serif',
                       fontWeight: 400,
-                      color: "#908B83",
+                      color: "#5E554C",
                     }}
                   >
                     Choose a noodle, toppings, and a soup base like chicken bone

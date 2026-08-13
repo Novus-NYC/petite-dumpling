@@ -54,7 +54,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed left-0 top-0 z-50 w-full">
+      <nav className="fixed left-0 top-0 z-50 w-full" aria-label="Primary navigation">
         <div
           className={`
             flex items-center justify-between
@@ -116,13 +116,15 @@ export default function Navbar() {
 
           <a
             href="#order"
+            tabIndex={scrolled ? 0 : -1}
+            aria-hidden={!scrolled}
             className={`
               cta-sweep hidden items-center gap-2 rounded-full px-5 py-3
               text-[15px] font-extrabold shadow-[0_12px_26px_rgba(237,195,1,0.24)]
               transition duration-300 lg:inline-flex
               ${scrolled
-                ? "translate-y-0 bg-[#EDC301] text-white opacity-100"
-                : "pointer-events-none translate-y-2 bg-[#EDC301] text-white opacity-0"}
+                ? "translate-y-0 bg-[#EDC301] text-black opacity-100"
+                : "pointer-events-none translate-y-2 bg-[#EDC301] text-black opacity-0"}
             `}
           >
             <ShoppingBag size={18} strokeWidth={2.5} />
@@ -133,7 +135,8 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           type="button"
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-controls="mobile-menu"
           aria-expanded={open}
           onClick={() => setOpen(!open)}
           className="
@@ -169,6 +172,8 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       <div
+        id="mobile-menu"
+        aria-hidden={!open}
         className={`
           md:hidden overflow-hidden transition-all duration-300 ease-in-out
           ${open ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}
@@ -185,6 +190,7 @@ export default function Navbar() {
                 key={item.id}
                 href={item.href}
                 onClick={() => setOpen(false)}
+                tabIndex={open ? 0 : -1}
                 className={`
                   nav-link text-[18px]
                   ${activeSection === item.id ? "is-active text-[#312312]" : "text-[#312312]"}
@@ -196,18 +202,19 @@ export default function Navbar() {
             <a
               href="#order"
               onClick={() => setOpen(false)}
-              className="cta-sweep inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#EDC301] px-5 text-[15px] font-extrabold text-white"
+              tabIndex={open ? 0 : -1}
+              className="cta-sweep inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#EDC301] px-5 text-[15px] font-extrabold text-black"
             >
               Order now
             </a>
           </div>
         </div>
       </div>
-      </nav>
-
       <a
         href="#"
         aria-label="Back to top"
+        tabIndex={scrolled ? 0 : -1}
+        aria-hidden={!scrolled}
         className={`
           fixed bottom-5 right-5 z-50 flex h-12 w-12 items-center justify-center rounded-full
           bg-[#312312] text-[#FFEB8D] shadow-[0_14px_30px_rgba(49,35,18,0.24)]
@@ -217,6 +224,7 @@ export default function Navbar() {
       >
         <ArrowUp size={20} strokeWidth={2.6} />
       </a>
+      </nav>
     </>
   );
 }

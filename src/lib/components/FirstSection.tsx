@@ -57,7 +57,7 @@ export default function FirstSection() {
               <span
                 className="text-[11px] sm:text-[12px]"
                 style={{
-                  color: "#908B83",
+                  color: "#5E554C",
                   fontFamily: '"Albert Sans", sans-serif',
                   fontWeight: 800,
                 }}
@@ -91,7 +91,7 @@ export default function FirstSection() {
                 lg:mt-8 lg:text-[21px]
               "
               style={{
-                color: "#908B83",
+                color: "#5E554C",
                 fontFamily: '"Albert Sans", sans-serif',
                 fontWeight: 400,
               }}
@@ -125,7 +125,7 @@ export default function FirstSection() {
                 lg:text-[21px]
               "
               style={{
-                color: "#6F675F",
+                color: "#5E554C",
                 fontFamily: '"Albert Sans", sans-serif',
                 fontWeight: 400,
               }}
@@ -149,7 +149,7 @@ export default function FirstSection() {
                 <span
                   className="text-[13px] sm:text-[14px]"
                   style={{
-                    color: "#908B83",
+                    color: "#5E554C",
                     fontFamily: '"Albert Sans", sans-serif',
                     fontWeight: 800,
                   }}
@@ -168,7 +168,7 @@ export default function FirstSection() {
                 <span
                   className="text-[13px] sm:text-[14px]"
                   style={{
-                    color: "#908B83",
+                    color: "#5E554C",
                     fontFamily: '"Albert Sans", sans-serif',
                     fontWeight: 800,
                   }}
@@ -192,7 +192,7 @@ export default function FirstSection() {
               "
               style={{
                 backgroundColor: "#F7CDC4",
-                color: "#FFFFFF",
+                color: "#312312",
                 fontFamily: "var(--font-albert-sans), sans-serif",
                 fontWeight: 800,
               }}
@@ -240,7 +240,7 @@ export default function FirstSection() {
                 <span
                   className="text-[12px] sm:text-[13px]"
                   style={{
-                    color: "#908B83",
+                    color: "#5E554C",
                     fontFamily: '"Albert Sans", sans-serif',
                     fontWeight: 800,
                   }}
@@ -369,7 +369,7 @@ export default function FirstSection() {
                 <span
                   className="text-[13px] font-extrabold sm:text-[14px]"
                   style={{
-                    color: "#908B83",
+                    color: "#5E554C",
                     fontFamily: '"Albert Sans", sans-serif',
                     fontWeight: 800,
                   }}
@@ -396,7 +396,7 @@ export default function FirstSection() {
                 harness its energy.”
               </p>
               <p
-                className="mt-5 text-[15px] leading-[1.4] text-[#6F675F] sm:text-[17px]"
+                className="mt-5 text-[15px] leading-[1.4] text-[#5E554C] sm:text-[17px]"
                 style={{ fontFamily: "var(--font-albert-sans), sans-serif" }}
               >
                 A little chef-note energy for the table: bold moves, steady hands,

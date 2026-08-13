@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 export default function ScrollEffects() {
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const autoRevealItems = Array.from(
       document.querySelectorAll<HTMLElement>("[data-auto-reveal], [data-footer-reveal]")
     );
@@ -26,6 +27,14 @@ export default function ScrollEffects() {
         item.classList.add(index % 3 === 0 ? "reveal-scale" : "reveal-up");
       }
     });
+
+    if (prefersReducedMotion) {
+      revealItems.forEach((item) => item.classList.add("is-visible"));
+      document
+        .querySelectorAll<HTMLElement>("[data-parallax]")
+        .forEach((item) => item.style.setProperty("--parallax-y", "0px"));
+      return;
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {

@@ -137,7 +137,7 @@ function FeatureCard({ image, title, description, delay = "0ms" }: FeatureCardPr
           style={{
             fontFamily: '"Albert Sans", sans-serif',
             fontWeight: 400,
-            color: "#908B83",
+            color: "#5E554C",
           }}
         >
           {description}
@@ -152,7 +152,7 @@ function FeatureCard({ image, title, description, delay = "0ms" }: FeatureCardPr
           "
           style={{
             backgroundColor: "#F7CDC4",
-            color: "#FFFFFF",
+            color: "#312312",
             fontFamily: '"Albert Sans", sans-serif',
             fontWeight: 800,
           }}
@@ -168,7 +168,7 @@ function FeatureCard({ image, title, description, delay = "0ms" }: FeatureCardPr
 function ReviewCard({ review }: { review: Review }) {
   return (
     <article className="review-card flex w-[310px] shrink-0 flex-col rounded-[8px] border border-white/12 bg-white/[0.07] p-5 shadow-[0_20px_48px_rgba(0,0,0,0.18)] backdrop-blur-md sm:w-[360px]">
-      <div className="flex items-center gap-1 text-[#EDC301]" aria-label="5 star review">
+      <div className="flex items-center gap-1 text-[#EDC301]" role="img" aria-label="5 star review">
         {Array.from({ length: 5 }).map((_, index) => (
           <Star key={index} size={18} fill="currentColor" strokeWidth={1.6} aria-hidden="true" />
         ))}
@@ -242,7 +242,7 @@ export default function OrderFeaturesSection() {
             Order Online
           </h2>
 
-          <p data-auto-reveal className="mt-3 max-w-[760px] text-center text-[16px] leading-[1.42] text-[#908B83] sm:text-[19px] md:text-[22px] lg:text-[24px]">
+          <p data-auto-reveal className="mt-3 max-w-[760px] text-center text-[16px] leading-[1.42] text-[#5E554C] sm:text-[19px] md:text-[22px] lg:text-[24px]">
             Park Slope and Prospect Heights are open for pickup and delivery.
           </p>
 
@@ -270,7 +270,7 @@ export default function OrderFeaturesSection() {
                 />
               </div>
 
-              <p className="mt-4 text-center text-[13px] font-extrabold uppercase tracking-[0.18em] text-[#6F675F]">
+              <p className="mt-4 text-center text-[13px] font-extrabold uppercase tracking-[0.18em] text-[#5E554C]">
                 Park Slope
               </p>
               <h3 className="display-font mt-2 text-center text-[42px] leading-none text-[#312312]">
@@ -291,7 +291,7 @@ export default function OrderFeaturesSection() {
     "
     style={{
       backgroundColor: "#EDC301",
-      color: "#FFFFFF",
+      color: "#312312",
       fontFamily: '"Albert Sans", sans-serif',
       fontWeight: 800,
     }}
@@ -318,7 +318,7 @@ export default function OrderFeaturesSection() {
                 />
               </div>
 
-              <p className="mt-4 text-center text-[13px] font-extrabold uppercase tracking-[0.18em] text-[#6F675F]">
+              <p className="mt-4 text-center text-[13px] font-extrabold uppercase tracking-[0.18em] text-[#5E554C]">
                 Park Slope
               </p>
               <h3 className="display-font mt-2 text-center text-[42px] leading-none text-[#312312]">
@@ -340,7 +340,7 @@ export default function OrderFeaturesSection() {
                 style={{
                   borderColor: "#EDC301",
                   backgroundColor: "#EDC301",
-                  color: "#FFFFFF",
+                  color: "#312312",
                   fontFamily: '"Albert Sans", sans-serif',
                   fontWeight: 800,
                 }}
@@ -367,7 +367,7 @@ export default function OrderFeaturesSection() {
                 />
               </div>
 
-              <p className="mt-4 text-center text-[13px] font-extrabold uppercase tracking-[0.18em] text-[#6F675F]">
+              <p className="mt-4 text-center text-[13px] font-extrabold uppercase tracking-[0.18em] text-[#5E554C]">
                 Prospect Heights
               </p>
               <h3 className="display-font mt-2 text-center text-[42px] leading-none text-[#312312]">
@@ -416,7 +416,7 @@ export default function OrderFeaturesSection() {
                 />
               </div>
 
-              <p className="mt-4 text-center text-[13px] font-extrabold uppercase tracking-[0.18em] text-[#6F675F]">
+              <p className="mt-4 text-center text-[13px] font-extrabold uppercase tracking-[0.18em] text-[#5E554C]">
                 Prospect Heights
               </p>
               <h3 className="display-font mt-2 text-center text-[42px] leading-none text-[#312312]">
@@ -481,7 +481,7 @@ export default function OrderFeaturesSection() {
               href="https://www.yelp.com/biz/petite-dumpling-brooklyn?osq=Petite+Dumpling#reviews"
               target="_blank"
               rel="noreferrer"
-              className="cta-sweep inline-flex min-h-[48px] w-fit items-center justify-center rounded-full bg-[#EDC301] px-6 text-[15px] font-extrabold text-white shadow-[0_14px_30px_rgba(237,195,1,0.22)]"
+              className="cta-sweep inline-flex min-h-[48px] w-fit items-center justify-center rounded-full bg-[#EDC301] px-6 text-[15px] font-extrabold text-black shadow-[0_14px_30px_rgba(237,195,1,0.22)]"
             >
               See all reviews
             </a>
@@ -529,7 +529,7 @@ export default function OrderFeaturesSection() {
             More Handmade Favorites
           </h2>
 
-          <p data-auto-reveal className="mx-auto mt-4 max-w-[760px] text-center text-[16px] leading-[1.4] text-[#6F675F] sm:text-[18px]">
+          <p data-auto-reveal className="mx-auto mt-4 max-w-[760px] text-center text-[16px] leading-[1.4] text-[#5E554C] sm:text-[18px]">
             A few deeper-cut dishes from the full menu, framed with the same care
             as the featured cards above.
           </p>
