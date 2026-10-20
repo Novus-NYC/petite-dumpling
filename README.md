@@ -71,8 +71,8 @@ npm run dev
 - [x] Update About + Contact pages (`src/app/pages/*`)
 - [x] Replace favicon + assets in `public/`
 - [x] Update SEO metadata
-- [x] Update Volta credit link text / URL in the footer
+- [x] Update Novus credit link text / URL in the footer
  
 ---
  
-Made by [Volta](https://voltanyc.org/)
+Made by [Novus](https://www.novusnyc.org/)
